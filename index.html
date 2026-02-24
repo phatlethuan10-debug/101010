@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM-Baking Handbook</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            background: #222;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url('https://i.postimg.cc/KYSN2K4q/nen.png');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            padding-bottom: 50px;
+        }
+
+        .header-section {
+            text-align: center;
+            padding: 40px 20px;
+            width: 90%;
+            max-width: 1000px;
+        }
+
+        h1 {
+            font-size: clamp(1.5rem, 6vw, 2.8rem);
+            text-shadow: 3px 3px 15px rgba(0,0,0,0.8);
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: clamp(0.8rem, 3vw, 1rem);
+            color: #ffb7c5;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .content-card {
+            background: rgba(255, 255, 255, 0.96);
+            color: #222;
+            padding: 30px;
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            width: 90%;
+            max-width: 950px;
+            border: 6px double #d81b60;
+        }
+
+        h2 {
+            color: #d81b60;
+            border-bottom: 4px solid #ffb7c5;
+            margin-bottom: 25px;
+            font-size: clamp(1.2rem, 4vw, 1.8rem);
+        }
+
+        .step-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+        }
+
+        .step-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .process-step {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .step-right { flex-direction: row-reverse; }
+
+        .video-container {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            padding: 15px;
+            border: 3px solid #d81b60;
+            box-shadow: 6px 6px 0px #ffb7c5;
+            width: 75%;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .step-link:hover .video-container {
+            transform: translateY(-5px);
+            box-shadow: 10px 10px 0px #d81b60;
+            background: #fffafa;
+        }
+
+        .qr-box {
+            flex: 0 0 85px;
+            height: 85px;
+            margin-right: 15px;
+            border: 1px solid #d81b60;
+            background: #fff0f3;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+
+        .step-right .qr-box { margin-right: 0; margin-left: 15px; }
+
+        .qr-box img { width: 100%; height: 100%; object-fit: cover; }
+
+        .video-text h3 { margin: 0; color: #d81b60; font-size: 1.1rem; }
+        .video-text .ingredients { font-size: 0.75rem; color: #d81b60; font-weight: bold; margin: 4px 0; }
+        .video-text p { margin: 0; font-size: 0.85rem; color: #444; line-height: 1.4; text-align: justify;}
+
+        .food-decor { width: 20%; text-align: center; }
+        .food-icon { font-size: clamp(2.5rem, 8vw, 4rem); display: block; }
+
+        @media (max-width: 768px) {
+            .food-decor { display: none; }
+            .video-container { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-section">
+        <h1>STEM-Baking Handbook</h1>
+        <div class="subtitle">Trang trại thông minh - Bánh ngon hạnh phúc</div>
+    </div>
+
+    <div class="content-card">
+        <h2>Công thức & Quy trình (Bấm để xem video)</h2>
+
+        <div class="step-wrapper">
+
+            <a href="LINK_PANCAKE" target="_blank" class="step-link">
+                <div class="process-step step-left">
+                    <div class="video-container">
+                        <div class="qr-box"><img src="https://via.placeholder.com/150?text=VIDEO"></div>
+                        <div class="video-text">
+                            <h3>1. Pancake (Bánh kếp)</h3>
+                            <div class="ingredients">📌 Nguyên liệu: Trứng, sữa, bơ</div>
+                            <p>Món bánh áp chảo nhanh gọn, mang lại cấu trúc mềm xốp đặc trưng. Thường được thưởng thức cùng mật ong hoặc trái cây tươi.</p>
+                        </div>
+                    </div>
+                    <div class="food-decor"><span class="food-icon">🥞</span></div>
+                </div>
+            </a>
+
+            <a href="LINK_CREPE" target="_blank" class="step-link">
+                <div class="process-step step-right">
+                    <div class="video-container">
+                        <div class="qr-box"><img src="https://via.placeholder.com/150?text=VIDEO"></div>
+                        <div class="video-text">
+                            <h3>2. Bánh Crepe</h3>
+                            <div class="ingredients">📌 Nguyên liệu: Trứng, sữa, bơ</div>
+                            <p>Vỏ bánh mỏng mịn, dẻo dai. Có thể kết hợp cùng nhiều loại nhân đa dạng như kem tươi, trái cây hoặc sốt socola.</p>
+                        </div>
+                    </div>
+                    <div class="food-decor"><span class="food-icon">🍓</span></div>
+                </div>
+            </a>
+
+            <a href="LINK_FLAN" target="_blank" class="step-link">
+                <div class="process-step step-left">
+                    <div class="video-container">
+                        <div class="qr-box"><img src="https://i.postimg.cc/3xpH2T1J/11111.jpg"></div>
+                        <div class="video-text">
+                            <h3>3. Bánh Flan</h3>
+                            <div class="ingredients">📌 Nguyên liệu: Trứng, sữa tươi, caramel</div>
+                            <p>Món bánh hấp mềm mịn, béo ngậy. Sự hòa quyện của trứng sữa và lớp sốt caramel đắng nhẹ tạo nên hương vị khó quên.</p>
+                        </div>
+                    </div>
+                    <div class="food-decor"><span class="food-icon">🍮</span></div>
+                </div>
+            </a>
+
+            <a href="https://drive.google.com/file/d/1hukoJSM5ITy4BSfWZM62HDAemj0ddxw8/view?usp=drive_link" target="_blank" class="step-link">
+                <div class="process-step step-right">
+                    <div class="video-container">
+                        <div class="qr-box"><img src="https://i.postimg.cc/6Qbxc98r/IMG-20260224-165446.png" alt="Bánh sữa tươi chiên"></div>
+                        <div class="video-text">
+                            <h3>4. Bánh sữa tươi chiên</h3>
+                            <div class="ingredients">📌 Nguyên liệu: Sữa tươi, bột ngô, trứng, bột chiên xù</div>
+                            <p>Vỏ ngoài giòn rụm, nhân sữa bên trong đặc dẻo, nóng hổi và thơm nồng nàn vị sữa tươi tinh khiết.</p>
+                        </div>
+                    </div>
+                    <div class="food-decor"><span class="food-icon">🧈</span></div>
+                </div>
+            </a>
+
+            <a href="LINK_BONG_LAN" target="_blank" class="step-link">
+                <div class="process-step step-left">
+                    <div class="video-container">
+                        <div class="qr-box"><img src="https://via.placeholder.com/150?text=VIDEO"></div>
+                        <div class="video-text">
+                            <h3>5. Bánh bông lan</h3>
+                            <div class="ingredients">📌 Nguyên liệu: Trứng, sữa, bột mì</div>
+                            <p>Cốt bánh nhẹ nhàng, bông xốp như mây. Giữ trọn vẹn hương thơm tự nhiên của trứng và sữa, rất dễ ăn và phổ biến.</p>
+                        </div>
+                    </div>
+                    <div class="food-decor"><span class="food-icon">🍞</span></div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>
